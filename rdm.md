@@ -1,7 +1,8 @@
 We thank the reviewer for your valuable comments, which certainly helped us improve our manuscript's quality. Regarding your consideration, we have divided it into three main parts and given the point-to-point response below. We really hope this reply can address some of your concerns.
 
 
-1\. "Several details missing and questions unanswered."    
+1\. "Several details missing and questions unanswered."     
+**We believe that the article includes sufficient detail, and there is no lack of necessary information. Detailed explanations are provided below.**
   - "What models are you pre-training?".    
     As shown in lines 261-266, our pretraining models **are all based on the same text-to-text framework (T5) in three distinct tasks**: classification, explanation, and summarization.
   - "How is the pretraining stage structured?".   
@@ -10,11 +11,12 @@ We thank the reviewer for your valuable comments, which certainly helped us impr
     As shown in lines 204-217, the trained data (action, norm, and judgment) directly gain from the open-source dataset (human labeled). Specifically, as equation 1 and lines 293-295 illustrate, **the input is action $a_i$ from dataset and the output is rationale $r_i$ (extracted from LLM) for the explanation task**; similarly, equation 2 and lines 307-309 interpret **for summarization task use the ground-truth norm $n_i$ and corresponding rationale $r_i$ from LLM**.
    
 2\. "Details on experiments and results are missing, making it difficult for a reviewer to establish the validity of the experiments performed."
+**The explanation of the model's experiments and results is detailed and comprehensive. Specific details are provided below.**
  - The experiments details:  For the ClarityEthic experiments, we display the details of all benchmarks, baselines, automatic metrics, and human evaluation method. **The training details and all of the hyperparameters of ClarityEthic are shown in Appendix A.6, which can help others reproduce our method**. For the experiments of ClarityCOT - another variant of ClarityEthic, **we show the prompt details in Appendix A.3**. 
  - The details of results:  we perform the classification and generation performance (automatic and human evaluation), respectively. Moreover, we give the **ablation study** of ClarityEthic in section 4.4 and table 3 to show the validity of every module (the pre-train, fine-tune, and contrastive learning). Finally, we also **visualize the case study** in section 4.5 and table 4 to illustrate the effectiveness of ClarityEthic.
 
-3\. "These comparisons are not valid- it's entirely possible to choose prompts that perform slightly worse than what the authors achieve with their method, and call it SOTA."   
-     We provide two types of baselines, with each explained as follows.
+3\. "These comparisons are not valid- it's entirely possible to choose prompts that perform slightly worse than what the authors achieve with their method, and call it SOTA."    
+**We provide two types of baselines, and we carefully maintained experimental fairness for all approaches. With each explained as follows.**
  - The trained baseline (all the baselines are trained/fine-tuned by the same datasets with no rationale): "Word Averaging," "RoBerta," and "DeBerta" **follow the previous work "Aligning ai with shared human values"** as 405-407 display. Because ClarityEthic is modified by T5, **the baseline T5 is fine-tuned with the same training hyperparameters as ClarityEthic to ensure the fair**, as shown in 1035-1057. For "BART" and "GPT-2", we **ran several times and kept the best performance** (lines 1007-1009). 
     
- - The prompt baseline:  we prompt gpt-3.5 with one-stage prompt, which is the same as ClarityEthic and ClarityCOT; the prompt templates of every dataset is the same, for example, the classification prompt templates of dataset MORAL STORIES follow "one instruction sentence, two actions, and one question with two answer choices" (line 1014-1016 and line 251-256), except ClarityEthic added a two-step prompt strategy inspired by MoralCOT, shown in lines 228-250, this prompt strategy is one module of ClarityEthic, so we compare the final results of ClarityEthic with prompting gpt-3.5 directly.Meanwhile, we reach the performance of prompting LLM with well-designed ClarityCOT, suggesting that even with one cherry-picked prompt, the performance is lower than ClarityEthic.
+ - The prompt baseline:  we prompt gpt-3.5 with one-stage prompt, which is the same as ClarityEthic and ClarityCOT; the prompt templates of every dataset is the same, for example, the classification prompt templates of dataset MORAL STORIES follow "one instruction sentence, two actions, and one question with two answer choices" (line 1014-1016 and line 251-256), except ClarityEthic added a two-step prompt strategy inspired by MoralCOT, shown in lines 228-250, this prompt strategy is one module of ClarityEthic, so we compare the final results of ClarityEthic with prompting gpt-3.5 directly.
