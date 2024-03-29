@@ -26,6 +26,7 @@ We provided the technical details relevant to the methods in the paper, specific
  - **The results details**:  We perform the classification and generation performance (automatic and human evaluation), respectively. Moreover, we give the **ablation study** in section 4.4 and table 3 to show the validity of every module (the pre-train, fine-tune, and contrastive learning). Finally, we also **visualize the case study** in section 4.5 and table 4 to illustrate the effectiveness.
 
 3\. "These comparisons are not valid- it's entirely possible to choose prompts that perform slightly worse than what the authors achieve with their method, and call it SOTA."    
+
 **We provide two types of baselines, and we carefully maintain experimental fairness for all approaches. With each is explained as follows.**   
  - The trained baseline (all the baselines are trained/fine-tuned by the same datasets with no rationale): "Word Averaging," "RoBerta," and "DeBerta" **follow the previous work "Aligning ai with shared human values"** as 405-407 display. Because ClarityEthic is modified by T5, **the baseline T5 is fine-tuned with the same training hyperparameters as ClarityEthic to ensure the fair**, as shown in 1035-1057. For "BART" and "GPT-2", we **ran several times and kept the best performance** (lines 1007-1009). 
     
