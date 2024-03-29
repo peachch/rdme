@@ -2,10 +2,10 @@ We thank the reviewer for your comments. Regarding your consideration, we've put
 We really hope this reply can address some of your concerns.
 
 
-1\. "Several details missing and questions unanswered."     
+1\. "Several details missing and questions unanswered."         
 
   - "What models are you pre-training?".    
-    As shown in lines 261-266, our models **are all based on the same text-to-text framework (T5) in three distinct tasks**: classification, explanation, and summarization.
+    **As shown in lines 261-266**, our models **are all based on the same text-to-text framework (T5) in three distinct tasks**: classification, explanation, and summarization.
     
   - "How is the pretraining stage structured?".   
     **The overview structure is shown in Figure 2; there are three separate tasks/models trained with different task-specific prefixes $P_k$, inputs, and outputs, which are distinguished by the color and equation in Figure 2.**
@@ -13,12 +13,12 @@ We really hope this reply can address some of your concerns.
        
   - "Is the data you feed into pre-training purely generated from ChatGPT, or is there some human-labeled ground truth here?".   
     **The pretraining stage contains ground truth from the open-source datasets and data extracted from LLM.**
-    As shown in lines 204-217, the trained data (action, norm, and judgment) was gained from the open-source dataset (human labeled). Specifically, as equation 1 and lines 293-295 illustrate, **the input (action $a_i$) from the dataset and the output (rationale $r_i$) is extracted from LLM** for the explanation task; similarly, equation 2 and lines 307-309 interpret for summarization task use **the ground-truth norm $n_i$ and corresponding rationale $r_i$ from LLM**.
+    **As shown in lines 204-217**, the trained data (action, norm, and judgment) was gained from the open-source dataset (human labeled). Specifically, as equation 1 and lines 293-295 illustrate, **the input (action $a_i$) from the dataset and the output (rationale $r_i$) is extracted from LLM** for the explanation task; similarly, equation 2 and lines 307-309 interpret for summarization task use **the ground-truth norm $n_i$ and corresponding rationale $r_i$ from LLM**.
    
 2\. "Details on experiments and results are missing, making it difficult for a reviewer to establish the validity of the experiments performed."   
 
- - The experiment details:  For ClarityEthic, we display the details of all benchmarks, baselines, automatic metrics, and human evaluation methods. **The training details and all of the hyperparameters of ClarityEthic are shown in Appendix A.6, which can help others reproduce our method**. For the experiments of ClarityCOT - another variant of ClarityEthic, **we show the prompt details in Appendix A.3**.   
- - The results details:  We perform the classification and generation performance (automatic and human evaluation), respectively. Moreover, we give the **ablation study** in section 4.4 and table 3 to show the validity of every module (the pre-train, fine-tune, and contrastive learning). Finally, we also **visualize the case study** in section 4.5 and table 4 to illustrate the effectiveness.
+ - **The experiment details**:  For ClarityEthic, we display the details of all benchmarks, baselines, automatic metrics, and human evaluation methods. **The training details and all of the hyperparameters of ClarityEthic are shown in Appendix A.6, which can help others reproduce our method**. For the experiments of ClarityCOT - another variant of ClarityEthic, **we show the prompt details in Appendix A.3**.      
+ - **The results details**:  We perform the classification and generation performance (automatic and human evaluation), respectively. Moreover, we give the **ablation study** in section 4.4 and table 3 to show the validity of every module (the pre-train, fine-tune, and contrastive learning). Finally, we also **visualize the case study** in section 4.5 and table 4 to illustrate the effectiveness.
 
 3\. "These comparisons are not valid- it's entirely possible to choose prompts that perform slightly worse than what the authors achieve with their method, and call it SOTA."    
 **We provide two types of baselines, and we carefully maintain experimental fairness for all approaches. With each is explained as follows.**   
