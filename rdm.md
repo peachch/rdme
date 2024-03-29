@@ -1,4 +1,4 @@
-We thank the reviewer for your valuable comments, which certainly helped us improve our manuscript's quality. Regarding your consideration, we have divided it into three main parts and given the point-to-point response below.    
+We thank the reviewer for your comments. Regarding your consideration, we've put it into three main parts and given the point-to-point response below.    
 We really hope this reply can address some of your concerns.
 
 
