@@ -3,15 +3,19 @@ We really hope this reply can address some of your concerns.
 
 
 1\. "Several details missing and questions unanswered."         
+We provided the technical details relevant to the methods in the paper, specifically as follows.  
 
-  - "What models are you pre-training?".    
+  - "What models are you pre-training?".
+      
     **As shown in lines 261-266**, our models **are all based on the same text-to-text framework (T5) in three distinct tasks**: classification, explanation, and summarization.
     
-  - "How is the pretraining stage structured?".   
+  - "How is the pretraining stage structured?".
+     
     **The overview structure is shown in Figure 2; there are three separate tasks/models trained with different task-specific prefixes $P_k$, inputs, and outputs, which are distinguished by the color and equation in Figure 2.**
     Specifically, for classification, the input is action $a_i$, and the output is judgment $j_i$; for the rationale generator (explanation), the input is action $a_i$, and the output is rationale $r_i$; for the norm generator (summarization), the input is rational $r_i$, and the output is norm $n_i$.
        
-  - "Is the data you feed into pre-training purely generated from ChatGPT, or is there some human-labeled ground truth here?".   
+  - "Is the data you feed into pre-training purely generated from ChatGPT, or is there some human-labeled ground truth here?".
+       
     **The pretraining stage contains ground truth from the open-source datasets and data extracted from LLM.**
     **As shown in lines 204-217**, the trained data (action, norm, and judgment) was gained from the open-source dataset (human labeled). Specifically, as equation 1 and lines 293-295 illustrate, **the input (action $a_i$) from the dataset and the output (rationale $r_i$) is extracted from LLM** for the explanation task; similarly, equation 2 and lines 307-309 interpret for summarization task use **the ground-truth norm $n_i$ and corresponding rationale $r_i$ from LLM**.
    
