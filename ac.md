@@ -13,7 +13,7 @@ and solid experiments (contains ablation studies and a case study in Section 4)
 and the baselines and our model training parameters in the Appendix to help others reproduce, as emphasized in our response to Reviewer dQ55.  
 
  - "Validity concerns." For comparison, to ensure fairness, 
-we carefully follow the previous work https://arxiv.org/abs/2008.02275 and https://arxiv.org/abs/2012.15738, and maintain the same template of prompt similar 
+we carefully follow the previous works https://arxiv.org/abs/2008.02275 and https://arxiv.org/abs/2012.15738, and maintain the same template of different prompt strategies which similar 
 to https://arxiv.org/abs/2306.14308 and https://arxiv.org/abs/2210.01478, as emphasized in our response to Reviewer dQ55.
 
 2\.**Not specific**.
