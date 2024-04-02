@@ -8,7 +8,7 @@ The review text looks hasty, and the problems identified are minor, while the lo
 We appreciate AC's attention to the fairness issue in the decision:
 
 1\.**Lack of objectivity and evidence**. The reviewer for weaknesses, "details missing," and "comparisons are not valid" are hasty and unrealistic.   
- - "Details missing." The reviewer commented that we missed the pre-training structure (shown in Figure 2), the model specification (shown in lines 261-266), and the data we feed (shown in lines 204-217) are unrealistic. Furthermore, we have presented detailed methodology descriptions (including the pre-training and fine-tuning framework in Figure 2 and Figure 3, respectively) 
+ - "Details missing." The reviewer commented that we missed the pre-training structure (shown in our paper Figure 2), the model specification (shown in lines 261-266), and the data we feed (shown in lines 204-217) are unrealistic. Furthermore, we have presented detailed methodology descriptions (including the pre-training and fine-tuning framework in Figure 2 and Figure 3, respectively) 
 and solid experiments with results (performance of two tasks shown in Table 1 and 2, and contains ablation studies and a case study in Section 4 with tables) 
 and training parameters (the baselines and every stage of our model) in the Appendix to help others reproduce, as emphasized in our response to Reviewer dQ55.  
 
