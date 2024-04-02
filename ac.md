@@ -7,7 +7,7 @@ However, we want to bring your attention to his/her problematic and unprofession
 The review text looks hasty, and the problems identified are minor, while the low rating scores(*Soundness: 1.5, Reproducibility: 1, Datasets: 1, Software: 1*) but with highest confidence (*Confidence: 5*) are not justified with convincing reasons. 
 We appreciate AC's attention to the fairness issue in the decision:
 
-**Lack of objectivity and evidence**. The reviewer for weaknesses, "several details missing," and "comparisons are not valid" are hasty and unrealistic.   
+**Lack of objectivity and evidence**. The reviewer for weaknesses "several details missing," and "comparisons are not valid" are hasty and unrealistic.   
  - "Details missing." The reviewer commented that we missed the information on the pre-training structure (shown in our paper Figure 2), the model introduction (shown in lines 261-266), and the data we feed (shown in lines 204-217) are unrealistic.
 Furthermore, we have presented detailed methodology descriptions (including the pre-training and fine-tuning framework in Figure 2 and Figure 3, respectively) 
 and solid experiments with results (performance of two tasks shown in Table 1 and 2, and contains ablation studies and a case study in Section 4 with tables) 
