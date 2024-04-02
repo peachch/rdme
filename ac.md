@@ -4,11 +4,11 @@ We would like to extend our sincere appreciation for your dedicated efforts duri
 
 However, we want to bring your attention to his/her problematic and unprofessional comments. While we respect the review provided, unfortunately, we have not received a response from him/her to our rebuttal.
 
-The review text looks hasty, and the problems identified are minor, while the low rating scores(*Soundness: 1.5, Reproducibility: 1, Datasets: 1, Software: 1) are not justified with convincing 
+The review text looks hasty, and the problems identified are minor, while the low rating scores(*Soundness: 1.5, Reproducibility: 1, Datasets: 1, Software: 1*) are not justified with convincing 
 reasons.   
 We appreciate AC's attention to the fairness issue in the decision:
 
-1\.**lack of objectivity and evidence**. The reviewer for weakness "lack of details"(method, experiment, and result) is hasty and unrealistic. 
+1\.**Lack of objectivity and evidence**. The reviewer for weakness "lack of details"(method, experiment, and result) is hasty and unrealistic. 
 We have presented detailed methodology descriptions (including the pre-training and fine-tuning framework in Figure 2 and Figure 3, respectively) 
 and solid experiments (contains ablation studies and a case study in Section 4) 
 and the baselines and our model training parameters in the Appendix to help others reproduce, as emphasized in our response to Reviewer dQ55.
