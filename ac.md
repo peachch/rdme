@@ -4,7 +4,7 @@ We would like to extend our sincere appreciation for your dedicated efforts duri
 
 However, we want to bring your attention to his/her problematic and unprofessional comments. While we respect the review provided, unfortunately, we have not received a response from him/her to our rebuttal.
 
-The review text looks hasty, and the problems identified are minor, while the low rating scores(Soundness: 1.5, Reproducibility: 1, Datasets: 1, Software: 1) are not justified with convincing 
+The review text looks hasty, and the problems identified are minor, while the low rating scores(*Soundness: 1.5, Reproducibility: 1, Datasets: 1, Software: 1) are not justified with convincing 
 reasons.   
 We appreciate AC's attention to the fairness issue in the decision:
 
