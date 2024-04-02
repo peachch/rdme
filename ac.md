@@ -13,10 +13,10 @@ Specifically, we have presented detailed methodology descriptions (including the
 Furthermore, solid experiments with results (performance of two tasks shown in Tables 1 and 2, and contains ablation studies and a case study in Section 4 with tables) 
 and training parameters (the baselines and every stage of our model) in the Appendix to help others reproduce, as emphasized in our response to Reviewer dQ55.  
 
- - "*Comparisons are not valid.*" The reviewer thinks we chose baseline prompts that perform worse to compare is hasty and lack of evidence.
+ - "*Comparisons are not valid.*" The reviewer thinks we chose prompts of baselines that perform worse to compare is hasty and lack of evidence.
 To ensure comparison fairness, 
 we carefully follow the previous works https://arxiv.org/abs/2008.02275 and https://arxiv.org/abs/2012.15738, and maintain different prompt strategies utilizing the same template, which is similar 
-to https://arxiv.org/abs/2306.14308 and https://arxiv.org/abs/2210.01478 (the details of every baseline is presented in Appendix), as emphasized in our response to Reviewer dQ55.
+to https://arxiv.org/abs/2306.14308 and https://arxiv.org/abs/2210.01478, the details of every baseline is presented in the Appendix, as emphasized in our response to Reviewer dQ55.
 
 
 Overall, we think the rating scores do not align with the content of the review. The scores lack justification, and the evidence does not adequately support the review text regarding weaknesses.
