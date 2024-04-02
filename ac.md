@@ -15,7 +15,7 @@ and training parameters (the baselines and every stage of our model) in the Appe
 
  - "*Comparisons are not valid.*" The reviewer thinks we chose prompts of baselines that perform worse to compare is hasty and lack of evidence.
 To ensure comparison fairness, 
-we carefully follow the previous works https://arxiv.org/abs/2008.02275 and https://arxiv.org/abs/2012.15738, and maintain different prompt strategies utilizing the same template, which is similar 
+we carefully follow the previous works https://arxiv.org/abs/2008.02275 and https://arxiv.org/abs/2012.15738, and utilize the same template of different prompt strategies, which is similar 
 to https://arxiv.org/abs/2306.14308 and https://arxiv.org/abs/2210.01478, the details of every baseline is presented in the Appendix, as emphasized in our response to Reviewer dQ55.
 
 
