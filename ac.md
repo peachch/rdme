@@ -7,8 +7,8 @@ However, we want to bring your attention to his/her problematic and unprofession
 The review text looks hasty, and the problems identified are minor, while the low rating scores(*Soundness: 1.5, Reproducibility: 1, Datasets: 1, Software: 1*) but with highest confidence (*Confidence: 5*) are not justified with convincing reasons. 
 We appreciate AC's attention to the fairness issue in the decision:
 
-1\.**Lack of objectivity and evidence**. The reviewer for weaknesses, "lack of details," and "validity concerns" are hasty and unrealistic.
- -"Lack of details (method, experiment, and result)". We have presented detailed methodology descriptions (including the pre-training and fine-tuning framework in Figure 2 and Figure 3, respectively) 
+1\.**Lack of objectivity and evidence**. The reviewer for weaknesses, "lack of details," and "validity concerns" are hasty and unrealistic.   
+ - "Lack of details (method, experiment, and result)". We have presented detailed methodology descriptions (including the pre-training and fine-tuning framework in Figure 2 and Figure 3, respectively) 
 and solid experiments (contains ablation studies and a case study in Section 4) 
 and the baselines and our model training parameters in the Appendix to help others reproduce, as emphasized in our response to Reviewer dQ55.  
 
