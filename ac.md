@@ -15,7 +15,7 @@ and the baselines and our model training parameters in the Appendix to help othe
 2\. **Hasty judgment**.   
 
  - "Validity concerns." It seems to rely on quick heuristics that serve as reasons to dismiss our paper.    For comparison, to ensure fairness, 
-we carefully follow the previous work https://arxiv.org/abs/2008.02275 and maintain the same template of prompt similar 
+we carefully follow the previous work https://arxiv.org/abs/2008.02275 and https://arxiv.org/abs/2012.15738, and maintain the same template of prompt similar 
 to https://arxiv.org/abs/2306.14308 and https://arxiv.org/abs/2210.01478, as emphasized in our response to Reviewer dQ55.
 
  - "Current clarity of writing," the comments should fall under suggestions rather than fundamental weakness.
