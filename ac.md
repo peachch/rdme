@@ -8,9 +8,9 @@ The review text looks hasty, and the problems identified are minor, while the lo
 We appreciate AC's attention to the fairness issue in the decision:
 
 1\.**Lack of objectivity and evidence**. The reviewer for weaknesses, "lack of details," and "validity concerns" are hasty and unrealistic.   
- - "Lack of details (method, experiment, and result)". We have presented detailed methodology descriptions (including the pre-training and fine-tuning framework in Figure 2 and Figure 3, respectively) 
-and solid experiments (contains ablation studies and a case study in Section 4) 
-and the baselines and our model training parameters in the Appendix to help others reproduce, as emphasized in our response to Reviewer dQ55.  
+ - "Lack of details (method, experiment, and result)." We have presented detailed methodology descriptions (including the pre-training and fine-tuning framework in Figure 2 and Figure 3, respectively) 
+and solid experiments with results (performance of two tasks shown in Figures 1 and 2, and contains ablation studies and a case study in Section 4) 
+and training parameters (the baselines and every stage of our model) in the Appendix to help others reproduce, as emphasized in our response to Reviewer dQ55.  
 
  - "Validity concerns." For comparison, to ensure fairness, 
 we carefully follow the previous works https://arxiv.org/abs/2008.02275 and https://arxiv.org/abs/2012.15738, and maintain the same template of different prompt strategies which similar 
