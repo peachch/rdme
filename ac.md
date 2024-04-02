@@ -9,7 +9,7 @@ We appreciate AC's attention to the fairness issue in the decision:
 
 1\.**Lack of objectivity and evidence**. The reviewer for weaknesses, "lack of details," and "validity concerns" are hasty and unrealistic.   
  - "Lack of details (method, experiment, and result)." We have presented detailed methodology descriptions (including the pre-training and fine-tuning framework in Figure 2 and Figure 3, respectively) 
-and solid experiments with results (performance of two tasks shown in Figures 1 and 2, and contains ablation studies and a case study in Section 4) 
+and solid experiments with results (performance of two tasks shown in Table 1 and 2, and contains ablation studies and a case study in Section 4 with tables) 
 and training parameters (the baselines and every stage of our model) in the Appendix to help others reproduce, as emphasized in our response to Reviewer dQ55.  
 
  - "Validity concerns." For comparison, to ensure fairness, 
