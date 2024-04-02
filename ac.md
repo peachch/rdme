@@ -14,11 +14,11 @@ and the baselines and our model training parameters in the Appendix to help othe
 
 2\. **Hasty judgment**.   
 
- -"validity concerns." It seems to rely on quick heuristics that serve as reasons to dismiss our paper.    For comparison, to ensure fairness, 
+ - "Validity concerns." It seems to rely on quick heuristics that serve as reasons to dismiss our paper.    For comparison, to ensure fairness, 
 we carefully follow the previous work https://arxiv.org/abs/2008.02275 and maintain the same template of prompt similar 
 to https://arxiv.org/abs/2306.14308 and https://arxiv.org/abs/2210.01478, as emphasized in our response to Reviewer dQ55.
 
- -"current clarity of writing," the comments should fall under suggestions rather than fundamental weakness.
+ - "Current clarity of writing," the comments should fall under suggestions rather than fundamental weakness.
 
 Overall, we think the rating scores do not align with the content of the review. The scores lack justification, and the evidence does not adequately support the review text regarding weaknesses.
 We trust your attention paid to his matter and your diligence in maintaining the quality and fairness of the reviews. Thank you once again for your hard work!
