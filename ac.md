@@ -19,5 +19,5 @@ we carefully follow the previous works https://arxiv.org/abs/2008.02275 and http
 to https://arxiv.org/abs/2306.14308 and https://arxiv.org/abs/2210.01478, the details of every baseline is presented in the Appendix, as emphasized in our response to Reviewer dQ55.
 
 
-Overall, we think the rating scores do not align with the content of the review. The scores lack justification, and the evidence does not adequately support the review text regarding weaknesses.
+Overall, we think the rating scores do not align with the content of the review. **The scores lack justification, and the evidence does not adequately support the review text regarding weaknesses.**
 We trust your attention paid to his matter and your diligence in maintaining the quality and fairness of the reviews. Thank you once again for your hard work!
