@@ -16,16 +16,17 @@ ClarityCoT is a variation of ClarityETHIC used for LLM, and *the major concepts 
 
 There seems to be some misunderstanding here. The p-values of T5-large, Flan-T5-large, and BART-large are less than 0.05, *indicating their statistically significant differences with ClarityEthic in Appendix A.6.* 
 
-While we reveal our method is not significantly different from GPT-3.5, it performs comparably well, indicating our task-specific models in small sizes are as competitive as strong LLMs. Meanwhile, the standard deviations of ClarityEthic are smaller than GPT-3.5, showing stability.
+While we reveal that our method is not significantly different from GPT-3.5, it performs comparably well, indicating that our task-specific models in small sizes are as competitive as strong LLMs. Meanwhile, the standard deviations of ClarityEthic are smaller than GPT-3.5, showing stability.
 
 > __Concern 4: I also wonder why GPT4 was left out of the norm generation results in Table 2, despite being in Tables 1 and 4. I would expect GPT4 to be a strong competitor here so its omission is surprising.__
 
 As Section 3.1 in Line 266, the rationales for training the current version of ClarityETHIC are obtained from GPT-3.5. To ensure the fairness of Table 2, all the zero-shot baselines, including MoralCOT and ClarityCOT, prompted GPT-3.5. 
 
-> __Concern 2: Despite the significant effort put into the framework, it seems like there is a relatively small gain (if significant) over simpler baselines, especially given the substantially increased complexity. This is most evident with the T5-large model which is just a 0.032 F1 score behind the proposed model. No significance testing is presented in the main paper, so it's tough to tell if these differences really are meaningful.__
-  -
+> __Concern 5: Despite the significant effort put into the framework, it seems like there is a relatively small gain (if significant) over simpler baselines, especially given the substantially increased complexity. This is most evident with the T5-large model which is just a 0.032 F1 score behind the proposed model. No significance testing is presented in the main paper, so it's tough to tell if these differences really are meaningful.__
 
-> __Concern 3: Given the strength of T5-large, it would be nice to see if training a larger but similar architecture model like flan-t5-xxl might do better here. Do we just need more parameters?
+Our paper provides multiple metrics to facilitate a comprehensive performance evaluation of each method. T5-large lags behind ClarityETHIC by 8.7% (Accuracy) and 22.8% (F1) in the ETHICS dataset. In addition, the fine-tune baselines, including T5-large, have a larger variance than ClarityETHIC and have lower performance stability，as shown in Table 11.
+
+> __Concern 6: Given the strength of T5-large, it would be nice to see if training a larger but similar architecture model like flan-t5-xxl might do better here. Do we just need more parameters?__
   This is an interesting research question, but it is not the primary focus of our paper. Regarding concern 3, our method provides a small-size (770M) model with competitive performance in moral judgment compared with strong LLMs.
 
   Based on the existing results, more parameters are not the only thing we need. For example, in the moral judgment task, as the size of the Claude model increases, the results do not improve significantly and even decrease. In addition, it is suggested that the models of GPT-3.5 (MoralCOT and ClarityCoT) have a more stable performance than GPT-4.
