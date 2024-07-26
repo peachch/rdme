@@ -9,6 +9,8 @@ The technique is standard, actually—the notations of the formula are necessary
 
 ClarityCoT is a variation of ClarityETHIC used for LLM, and *the major concepts between them are the same*. Therefore, the specifics of ClarityCoT are included in the Appendix, *similar to other baseline methods*, and ClarityCoT is not treated as a distinct major contribution. 
 
-> 
+> __Concern 2: Despite the significant effort put into the framework, it seems like there is a relatively small gain (if significant) over simpler baselines, especially given the substantially increased complexity. This is most evident with the T5-large model which is just a 0.032 F1 score behind the proposed model. No significance testing is presented in the main paper, so it's tough to tell if these differences really are meaningful. Given the strength of T5-large, it would be nice to see if training a larger but similar architecture model like flan-t5-xxl might do better here. Do we just need more parameters?__
+  - 
+
 
 > 
