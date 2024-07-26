@@ -30,3 +30,18 @@ Our paper provides multiple metrics to facilitate a comprehensive performance ev
   This is an interesting research question, but it is not the primary focus of our paper. Regarding concern 3, our method provides a small-size (770M) model with competitive performance in moral judgment compared with strong LLMs.
 
   Based on the existing results, it seems that more parameters are not the only thing we need. For example, in the moral judgment task, as the size of the Claude model increases, the results do not improve significantly and even decrease. In addition, it is suggested that the models of GPT-3.5 (MoralCOT and ClarityCoT) have a more stable performance than GPT-4.
+
+> Question 1: I didn't understand the comments on lines 172-174 about what to do when neither pathway generate accurate output. Could you provide more details or an example here? I'm not sure how often this happens or what is being generated. The same goes for what is the "filler function" on line 382.
+
+  The filter function aims to select the most reasonable path, which is defined in line 369 and 376: <code>\max\{f_{class}(p_3, a_i,\hat{n}_{m}),f_{class}(p_3, a_i, \hat{n}_{{im}})\}</code> if <code>f_{class}(p_1, a_i)\!< \!\tau</code>; or <code>f_{class}(p_1, a_i)</code> otherwise.
+
+  
+
+> Question 2: Are any of the results in Table 3 significantly different from the best system?
+
+> Question 3: Table 1 has the T5-Large with an 0.806 accuracy and 0.811 macro F1, while Table 3 has these as 0.811 and 0.813. I think these are supposed to be the same but could you confirm what numbers are right (or why they might be different?)
+
+
+> Question 4: Any idea why T5-Large would have such a strong performance drop off when testing with the ETHICS dataset?
+
+> Question 5: In table 5, the norms for the example of Logan cheating are almost the same, yet the two actions are different. Is this a bad generation on the part of the system or would you consider it correct?
