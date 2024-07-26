@@ -17,6 +17,11 @@ We follow the text of this paper: *Social norms—the unspoken commonsense rules
 
 > Concern 6: Existing models (Emelin et al., 2020; Hendrycks et al., 105 2020) often struggle to differentiate between hu- 106 man actions associated with the same social norm due to similar contexts. This claim seems shaky. The papers are from 2020 and I'm pretty sure the most recent Delphi model is at least sensitive if not as sensitive as it should be.
 
+> Concern 7: table 5. I don't really get the highlighting. "Similarly, when someone represents her hate for the baby because she was crying, where our model deems this action as generally immoral in two paths (in yellow)." I don't get why this is a good thing. Don't you want to come up with contrastive reasons? Isn't the immoral rationale supposed to be about why it is immoral? Isn't that relied on as a necessary part of your loss function? What is the effect of issues like this?
+
+ Sorry for the ambiguity here; the immoral rationale actually represents why it is immoral. To be precise, it should be "our norm generator finally generated immoral results in two paths."    
+
+
  
 ## Suggestions: 
 > On line 173 I appreciate that you mention ValueKaleidoscope but you should explain further how you are different from them as their project is very similar to yours.
