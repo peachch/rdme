@@ -17,7 +17,9 @@ ClarityCoT is a variation of ClarityETHIC used for LLM, and *the major concepts 
 
 > __Concern 3: The comparisons aren't always fair. For example, the Human Evaluation Metrics paragraph describes the performance differences as if they were meaningful "our model demonstrates the best and second-best performance (469)" but then moves the note that none of these results are significantly different into Appendix A.6. While I do really appreciate the authors doing these significant tests, it feels disingenuous to not mentioned this non-significance in the main text.__
 
-The p-values of T5-large, Flan-T5-large, and BART-large are less than 0.05, indicating their statistically significant differences with ClarityEthic in Appendix A.6. While we reveal our method is not significantly different from GPT-3.5, it performs comparably well, and indicating our task-specific models in small sizes are as competitive as strong LLMs. Meanwhile, the standard deviations of ClarityEthic are smaller than GPT-3.5, showing stability.
+There seems to be some misunderstanding here. The p-values of T5-large, Flan-T5-large, and BART-large are less than 0.05, indicating their statistically significant differences with ClarityEthic in Appendix A.6. 
+
+While we reveal our method is not significantly different from GPT-3.5, it performs comparably well, indicating our task-specific models in small sizes are as competitive as strong LLMs. Meanwhile, the standard deviations of ClarityEthic are smaller than GPT-3.5, showing stability.
 
 > __Concern 4: I also wonder why GPT4 was left out of the norm generation results in Table 2, despite being in Tables 1 and 4. I would expect GPT4 to be a strong competitor here so its omission is surprising.__
 
