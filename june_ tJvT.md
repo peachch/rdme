@@ -1,7 +1,5 @@
 
-> Concern 1: You overload the prefixes p1 and p2 around line 281 and 323. Because of this I'm not sure what you refer to on line 378.
 
-  The function in 378 is $f_{class}$, so the prefixes follow the classification model shown in line 323. Otherwise, line 281 represents the generation model $f_{rgen}$.
 
 > Concern 2: Do you fine tune your baseline models on the ethics and moral stories datasets? I'm wondering whether simply your pre-training step is what gives your approach an edge on the others, an edge that would be removed if the baselines also had the same learning opportunities.
 
@@ -20,8 +18,13 @@ We follow the text of this paper: *Social norms—the unspoken commonsense rules
 > Concern 7: table 5. I don't really get the highlighting. "Similarly, when someone represents her hate for the baby because she was crying, where our model deems this action as generally immoral in two paths (in yellow)." I don't get why this is a good thing. Don't you want to come up with contrastive reasons? Isn't the immoral rationale supposed to be about why it is immoral? Isn't that relied on as a necessary part of your loss function? What is the effect of issues like this?
 
  Sorry for the ambiguity here; the immoral rationale actually represents why it is immoral. To be precise, it should be "our norm generator finally generated immoral results in two paths."    
+ 
+> Question 1: You overload the prefixes p1 and p2 around line 281 and 323. Because of this I'm not sure what you refer to on line 378.
 
-
+  The function in 378 is $f_{class}$, so the prefixes follow the classification model shown in line 323. Otherwise, line 281 represents the generation model $f_{rgen}$.
+  
+> Question 2: What is the output of your classifier?
+  "Moral" or "Immoral".
  
 ## Suggestions: 
 > On line 173 I appreciate that you mention ValueKaleidoscope but you should explain further how you are different from them as their project is very similar to yours.
