@@ -28,7 +28,7 @@ While we reveal that our method is not significantly different from GPT-3.5, it 
 Now we provide the significant test of Table 1. We utilize a dependent t-test for paired samples. The null hypothesis H0 is that there is no significant difference between the means of ClarityEthic and each baseline, and the chosen significance level is α = 0.05.
 |  Model   | P-value (Accuracy) | P-value (F1) |
 |  ----  | ----  | ----|
-|  RoBERTa-large  | $3.4969 \times 10^{-5}$|4.6329 \times 10^{-5}|
+|  RoBERTa-large  | $3.4969 \times 10^{-5}$| $4.6329 \times 10^{-5}$|
 | DeBERTa-large  | 0.0006 |0.0015|
 | BART-large  | 0.0118 |0.0058|
 | T5-large  | 0.0393 |0.0746|
