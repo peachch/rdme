@@ -25,7 +25,7 @@ While we reveal that our method is not significantly different from GPT-3.5, it 
 
 > __Concern 5: Despite the significant effort put into the framework, it seems like there is a relatively small gain (if significant) over simpler baselines, especially given the substantially increased complexity. This is most evident with the T5-large model which is just a 0.032 F1 score behind the proposed model. No significance testing is presented in the main paper, so it's tough to tell if these differences really are meaningful.__
 
-Now we provide the significant test of Table 1. We utilize a dependent t-test for paired samples. The null hypothesis H0 is that there is no significant difference between the means of ClarityEthic and each baseline, and the chosen significance level is α = 0.05.
+Now, we provide the significant test of Table 1, and we will add this to the main body of paper later. We utilize a dependent t-test for paired samples. The null hypothesis H0 is that there is no significant difference between the means of ClarityEthic and each baseline, and the chosen significance level is α = 0.05.
 |  Model   | P-value (Accuracy) | P-value (F1) |
 |  ----  | ----  | ----|
 |  RoBERTa-large  | $3.4969 \times 10^{-5}$| $4.6329 \times 10^{-5}$|
