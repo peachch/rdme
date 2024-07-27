@@ -13,11 +13,11 @@ Yes, all the baseline models are finetuned with two datasets except close-source
 
 > Concern 3: table 5. I don't really get the highlighting. "Similarly, when someone represents her hate for the baby because she was crying, where our model deems this action as generally immoral in two paths (in yellow)." I don't get why this is a good thing. Don't you want to come up with contrastive reasons? Isn't the immoral rationale supposed to be about why it is immoral? Isn't that relied on as a necessary part of your loss function? What is the effect of issues like this?
 
-  - Training rationale data from LLMs.
+  - Training data (rationale & raw data).
   - The influence of prefixes is limited.
 
 > Concern 4: I think that you should give the intuition behind the equation on 348 more. E.g. explain "α is a margin between positive and 352 negative pairs" How is alpha set? Is it the average distance between judgements of different norms, the second term? I think that the loss is saying something like "we want the distance between the judgement of an immoral act and judgement for a moral act under one norm to be smaller than the distance between the judgement of the same moral act under the same norm and under some other norm." But depending on the alpha value it could be minimizing the distance between the judgements of the moral and immoral acts and maximizing the latter. Frankly, I don't see why this loss is appropriate in this case. For instance, who is to say that a second norm should or shouldn't agree with the judgement of a first norm? Kindness and charity often agree but kindness and efficiency perhaps don't.
-
+  - Dataset
 
 > Concern 5: "Existing models (Emelin et al., 2020; Hendrycks et al., 105 2020) often struggle to differentiate between human actions associated with the same social norm due to similar contexts." This claim seems shaky. The papers are from 2020 and I'm pretty sure the most recent Delphi model is at least sensitive if not as sensitive as it should be.
 
@@ -37,6 +37,8 @@ We follow the text of this paper: *Social norms—the unspoken commonsense rules
   "Moral" or "Immoral".
 
 > Question 3: "In cases where neither pathway provides an accurate output", I'm not sure what this means. Is this just line 378?
+
+  The bias of generated output.
  
 ## Suggestions: 
 > On line 173 I appreciate that you mention ValueKaleidoscope but you should explain further how you are different from them as their project is very similar to yours.
