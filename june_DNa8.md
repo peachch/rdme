@@ -28,11 +28,12 @@ While we reveal that our method is not significantly different from GPT-3.5, it 
 Now we provide the significant test of Table 1. We utilize a dependent t-test for paired samples. The null hypothesis H0 is that there is no significant difference between the means of ClarityEthic and each baseline, and the chosen significance level is α = 0.05.
 |  Model   | P-value (Accuracy) | P-value (F1) |
 |  ----  | ----  | ----|
-|  RoBERTa-large  | $3.4969 \times 10^{-5}$||
+|  RoBERTa-large  | $3.4969 \times 10^{-5}$|4.6329 \times 10^{-5}|
 | DeBERTa-large  | 0.0006 |0.0015|
 | BART-large  | 0.0118 |0.0058|
 | T5-large  | 0.0393 |0.0746|
 | GPT-3.5  | 0.0012 |0.0234|
+| Claude-3-haiku  | 1.5918 \times 10^{-5} |0.0007|
 
 > __Concern 6: Given the strength of T5-large, it would be nice to see if training a larger but similar architecture model like flan-t5-xxl might do better here. Do we just need more parameters?__
   This is an interesting research question, but it is not the primary focus of our paper. Regarding concern 3, our method provides a small-size (770M) model with competitive performance in moral judgment compared with strong LLMs.
