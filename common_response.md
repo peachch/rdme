@@ -23,6 +23,6 @@ Now, we provide the significant test of Table 1, and we will add this to the mai
 
 ## We need a minor revision of the main body and Appendix (DNa8, Pe9C, tJvT).
 
-1) We will move the significant-test results for human evaluation from the Appendix to Table 2 and add the above results to Table 1.
+1) We will move the significant test results for human evaluation from the Appendix to Table 2 and add the above results to Table 1.
 
 2) In the Limitation section, we will add that the binary classification task itself may poorly explain complex social behavior which may decrease the model's meaningful generalization.
