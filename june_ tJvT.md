@@ -1,4 +1,4 @@
-Thank you for being our reviewer again. Your previous comments were very helpful and greatly improved our paper. This time, we still appreciate your acknowledgment of the interesting method and the provision of sufficient experiments.
+Thank you for being our reviewer again. Your previous comments were very helpful and greatly improved our paper. This time, we still appreciate your acknowledgment of the interesting method and the provision of sufficient experiments. We address your questions below, including several new analyses following your suggestions.
 
 
 > __Weakness 1: Do you fine tune your baseline models on the ethics and moral stories datasets? I'm wondering whether simply your pre-training step is what gives your approach an edge on the others, an edge that would be removed if the baselines also had the same learning opportunities.__
