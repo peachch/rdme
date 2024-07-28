@@ -8,7 +8,7 @@ We show two types (4 cases) in the case study. The first type is the expected re
 The second type generates similar rationales or norms on two different paths. *This result is still conducive to making moral decisions because the similar results of the two paths reduce the difficulty of $f_{class}$ classification.* 
 Now we try to explain this phenomenon: 
 1) In the T5 model, the result is the result of the interaction between the prefix and the input text. However, *the prefix has a limited effect on the generator.*  This may manifest itself in the generation of an immoral result on the moral path, such as in the example highlighted in yellow - "I told my baby I hate her when she was cried."
-2) Otherwise, in fine-tuning, *we use contrastive learning to bring the generated norms using the rationale of two opposite paths closer*, i.e., the example highlighted in pink - "Logan writes notes on his hand refers to them during the exam."
+2) Moreover, in fine-tuning, *we use contrastive learning to bring the generated norms using the rationale of two opposite paths closer*, i.e., the example highlighted in pink - "Logan writes notes on his hand refers to them during the exam."
 
 Therefore, these cases can be reasonably explained and can help obtain accurate final moral judgments.
 
