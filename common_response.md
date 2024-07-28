@@ -26,7 +26,7 @@ Now, we provide the significant test of Table 1, and we will add this to the mai
 
 
 #### 3. Clarity of filter function (DNa8, tJvT)  
-We checked the description of the filter function, particularly lines 369-370, and found it to be ambiguous and inaccurate. We are restating it as follows:
+We checked the description of the filter function, particularly lines 369-370, and found it to be ambiguous and inaccurate. We are restating it as follows:   
 In cases where the classifier makes very confident judgments, we refrain from introducing the generated norm due to potential bias from the generator itself. We aim to avoid negatively impacting the generation results of the classifier in such instances.
 
 
