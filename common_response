@@ -10,8 +10,13 @@ We now display several new experiments and analyses based on your suggestions. W
 
 ## Additional significant test (DNa8, tJvT) and hightlight the key-point of our method (Pe9C).
 
+Now, we provide the significant test of Table 1, and we will add this to the main body of the paper later. We utilize a dependent t-test for paired samples. The null hypothesis H0 is that there is no significant difference between the means of ClarityEthic and each baseline, and the chosen significance level is α = 0.05.
+|  Model   | P-value (Accuracy) | P-value (F1) |
+|  ----  | ----  | ----|
+|  RoBERTa-large  | $3.4969 \times 10^{-5}$| $4.6329 \times 10^{-5}$|
+| DeBERTa-large  | 0.0006 |0.0015|
+| BART-large  | 0.0118 |0.0058|
+| T5-large  | 0.0393 |0.0746|
+| GPT-3.5  | 0.0012 |0.0234|
+| Claude-3-haiku  | $1.5918 \times 10^{-5}$ |0.0007|
 
-The authors tackle an interesting and timely challenge in a novel way. The introduction is clear and well-motivated. The method is mostly well-described and motivated. The range of experiments is good and shows that the method improves performance.
-intuitive (HiRS) / clearly-motivated (Cuc6, bkDY), and that it is simple (HiRS, UFW8) / straightforward to implement (RAFU) while still being robust (HiRS) / generalizable (RAFU, bkDY). We also appreciate that all reviewers noted our method’s empirical effectiveness compared to baselines and found our paper to be well-written / easy to follow.
-
-We have now added several new experiments and analyses according to your suggestions, which for now are mainly included in new appendices at the end of the paper for your convenience (so that they’re all in one place, and to keep section numbering consistent with before). We further address each of your questions in the individual responses, in addition to two items which we’d like to highlight here:
