@@ -14,7 +14,7 @@ Yes. Our framework includes 1) pre-training three distinct task-specific languag
 > __Question 3: Are the human-written norms sourced from the Moral Stories dataset?__
 Yes. The dataset provides the human-written norms responding to the actions.
 
-> __Question 4: how are the labels used to train and evaluate the model? Are they used as norms?
+> __Question 4: how are the labels used to train and evaluate the model? Are they used as norms?__
 
 
 Yes. The dataset provides the human-written norms responding to the actions.
