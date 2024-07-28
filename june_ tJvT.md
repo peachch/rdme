@@ -43,15 +43,15 @@ We follow the text of this paper: *Social norms—the unspoken commonsense rules
 
  Thanks for the suggestions. We will provide the difference later. Compared with ValueKaleidoscope, our differences with this method are as follows: 
 
-> __Suggestion 2: The frameworks are different. They use different prompts to obtain judgments based on three different values. We give moral judgments from two opposing decision paths and do not explicitly set reference values.__
+ - The frameworks are different. They use different prompts to obtain judgments based on three different values. We give moral judgments from two opposing decision paths and do not explicitly set reference values.__
 
 - Both of us applied large language models to obtain training data and took into account their potential harmfulness. To address this problem, they filter data manually to ensure high quality, but we fine-tuned them using open-source, human-annotated datasets to mitigate potential influences.
 
-> __Suggestion 3: If you're going to have a figure which mentions "other classifier" and "other generator" you should also put them them in the related work and cross reference. "Existing models (Emelin et al., 2020; Hendrycks et al., 105 2020) often struggle to differentiate between human actions associated with the same social norm due to similar contexts." This claim seems shaky. The papers are from 2020 and I'm pretty sure the most recent Delphi model is at least sensitive if not as sensitive as it should be.__
+> __Suggestion 2: If you're going to have a figure which mentions "other classifier" and "other generator" you should also put them them in the related work and cross reference. "Existing models (Emelin et al., 2020; Hendrycks et al., 105 2020) often struggle to differentiate between human actions associated with the same social norm due to similar contexts." This claim seems shaky. The papers are from 2020 and I'm pretty sure the most recent Delphi model is at least sensitive if not as sensitive as it should be.__
 
 Good points! We will revise them.
 
-> __Suggestion 4: In table 2 you should report the significance. Your approach is not significantly different from gpt3.5 as you report in the appendix. also on line 473__
+> __Suggestion 3: In table 2 you should report the significance. Your approach is not significantly different from gpt3.5 as you report in the appendix. also on line 473__
 
 Please see Common Response 4.
 
