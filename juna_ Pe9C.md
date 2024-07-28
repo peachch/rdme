@@ -21,6 +21,7 @@ Yes. Our framework includes 1) pre-training three distinct task-specific languag
 Yes. The dataset provides the human-written norms that respond to actions.
 
 > __Question 4: how are the labels used to train and evaluate the model? Are they used as norms?__
+
 Thank you for pointing out this inaccurate statement. The labels should be replaced by ground truth.
 
 > __Question 5: what do you mean that you treat the corresponding rationale as a norm?__
