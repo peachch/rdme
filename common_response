@@ -1,0 +1,10 @@
+We are grateful to all reviewers for their insightful comments. We appreciate that reviewers found ClarityEthic to be novelty and interesting (Pe9C, tJvT, DNa8) the method is well-descrived (tJvT, Pe9C) and motivated (Pe9C).  We also appreciate that all reviewers noted that the experiments are rich and solid.
+
+We now display several new experiments and analyses based on your suggestions. We further address each of your questions in the individual responses, in addition to three common items that we’d like to highlight here.
+
+## 
+
+The authors tackle an interesting and timely challenge in a novel way. The introduction is clear and well-motivated. The method is mostly well-described and motivated. The range of experiments is good and shows that the method improves performance.
+intuitive (HiRS) / clearly-motivated (Cuc6, bkDY), and that it is simple (HiRS, UFW8) / straightforward to implement (RAFU) while still being robust (HiRS) / generalizable (RAFU, bkDY). We also appreciate that all reviewers noted our method’s empirical effectiveness compared to baselines and found our paper to be well-written / easy to follow.
+
+We have now added several new experiments and analyses according to your suggestions, which for now are mainly included in new appendices at the end of the paper for your convenience (so that they’re all in one place, and to keep section numbering consistent with before). We further address each of your questions in the individual responses, in addition to two items which we’d like to highlight here:
