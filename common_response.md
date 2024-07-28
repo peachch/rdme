@@ -20,7 +20,7 @@ Now, we provide the significant test of Table 1, and we will add this to the mai
 |  RoBERTa-large  | $3.4969 \times 10^{-5}$| $4.6329 \times 10^{-5}$|
 | DeBERTa-large  | 0.0006 |0.0015|
 | BART-large  | 0.0118 |0.0058|
-| T5-large  | 0.0393 |0.0746|
+| T5-large  | 0.0393 |0.0535|
 | GPT-3.5  | 0.0012 |0.0234|
 | Claude-3-haiku  | $1.5918 \times 10^{-5}$ |0.0007|
 
