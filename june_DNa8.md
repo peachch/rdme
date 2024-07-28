@@ -9,14 +9,14 @@ Indeed, the technique is standard, actually—the notations of the formula are n
 
 > __Concern 2: While I do appreciate the goal of precision, the heavy use of notational definitions and equations takes up significantly more space, often at the expense of clarity for later parts. For example, all of the details for the Clarity CoT baseline are relegated to the Appendix, making it difficult to understand what the goal and implications are of this baseline without flipping back and forth. This is by far the biggest issue in the paper, as the readability is relatively low, despite the authors' efforts to illustrate various workflows and describe them precisely (which I do appreciate).__
 
-Thanks for your suggestion. We will consider moving it to the main body when we have more space. The reason we relegated it to the appendix earlier was that ClarityCoT is a variation of ClarityETHIC used for LLM, and the major concepts between them are the same. Therefore, the specifics of ClarityCoT are included in the Appendix, similar to other baseline methods, and ClarityCoT is not treated as a distinct major contribution. 
+Thanks for your suggestion! We will consider moving it to the main body when we have more space. The reason we relegated it to the appendix was that ClarityCoT is a variation of ClarityETHIC used for LLM, and the major concepts between them are the same. Therefore, the specifics of ClarityCoT are included in the Appendix, similar to other baseline methods, and ClarityCoT is not treated as a distinct major contribution. 
 
 
 > __Concern 3: The comparisons aren't always fair. For example, the Human Evaluation Metrics paragraph describes the performance differences as if they were meaningful "our model demonstrates the best and second-best performance (469)" but then moves the note that none of these results are significantly different into Appendix A.6. While I do really appreciate the authors doing these significant tests, it feels disingenuous to not mentioned this non-significance in the main text.__
 
-Good suggestion, and we will revise it. Please see the __Common Response 4__. 
+Good suggestion, and we will revise it! Please see the Common Response 4. 
 
-Otherwise, there seems to be some misunderstanding here. The p-values of T5-large, Flan-T5-large, and BART-large are less than 0.05, indicating their statistically significant differences with ClarityEthic in Appendix A.6.
+In addition, there seems to be some misunderstanding here. The p-values of T5-large, Flan-T5-large, and BART-large are less than 0.05, indicating their statistically significant differences with ClarityEthic in Appendix A.6.
 
 > __Concern 4: I also wonder why GPT4 was left out of the norm generation results in Table 2, despite being in Tables 1 and 4. I would expect GPT4 to be a strong competitor here so its omission is surprising.__
 
@@ -25,29 +25,21 @@ Otherwise, there seems to be some misunderstanding here. The p-values of T5-larg
 
 > __Concern 5: Despite the significant effort put into the framework, it seems like there is a relatively small gain (if significant) over simpler baselines, especially given the substantially increased complexity. This is most evident with the T5-large model which is just a 0.032 F1 score behind the proposed model. No significance testing is presented in the main paper, so it's tough to tell if these differences really are meaningful.__
 
-Now, we provide the significant test of Table 1, and we will add this to the main body of paper later. We utilize a dependent t-test for paired samples. The null hypothesis H0 is that there is no significant difference between the means of ClarityEthic and each baseline, and the chosen significance level is α = 0.05.
-|  Model   | P-value (Accuracy) | P-value (F1) |
-|  ----  | ----  | ----|
-|  RoBERTa-large  | $3.4969 \times 10^{-5}$| $4.6329 \times 10^{-5}$|
-| DeBERTa-large  | 0.0006 |0.0015|
-| BART-large  | 0.0118 |0.0058|
-| T5-large  | 0.0393 |0.0746|
-| GPT-3.5  | 0.0012 |0.0234|
-| Claude-3-haiku  | $1.5918 \times 10^{-5}$ |0.0007|
+Please see the Common Response 2.
 
 > __Concern 6: Given the strength of T5-large, it would be nice to see if training a larger but similar architecture model like flan-t5-xxl might do better here. Do we just need more parameters?__
-  This is an interesting research question, but it is not the primary focus of our paper. Regarding concern 3, our method provides a small-size (770M) model with competitive performance in moral judgment compared with strong LLMs.
+  This is also an interesting research question, but it is not the primary focus of our paper. Our method provides a small-size (770M) model with competitive performance in moral judgment compared with strong LLMs. We hope to contribute a flexible and adjustable small model that can make accurate moral judgments and provide explanations.
 
-  Based on the existing results, it seems that more parameters are not the only thing we need. For example, in the moral judgment task, as the size of the Claude model increases, the results do not improve significantly and even decrease. In addition, it is suggested that the models of GPT-3.5 (MoralCOT and ClarityCoT) have a more stable performance than GPT-4.
+  Moreover, based on the existing results, it seems that more parameters are not the only thing we need. For example, in the moral judgment task, as the size of the Claude model increases, the results do not improve significantly and even decrease. In addition, it is suggested that the models of GPT-3.5 (MoralCOT and ClarityCoT) have a more stable performance than GPT-4.
 
 > Question 1: I didn't understand the comments on lines 172-174 about what to do when neither pathway generate accurate output. Could you provide more details or an example here? I'm not sure how often this happens or what is being generated. The same goes for what is the "filler function" on line 382.
 
-  The filter function aims to select the most reasonable path, which is defined in line 369 and 376: <code>\max\{f_{class}(p_3, a_i,\hat{n}_{m}),f_{class}(p_3, a_i, \hat{n}_{{im}})\}</code> if <code>f_{class}(p_1, a_i)\!< \!\tau</code>; or <code>f_{class}(p_1, a_i)</code> otherwise.
+  Please see Common Response 3. Meanwhile, the filter function aims to select the most reasonable path, which is defined in line 369 and 376.
 
 
 > Question 2: Table 1 has the T5-Large with an 0.806 accuracy and 0.811 macro F1, while Table 3 has these as 0.811 and 0.813. I think these are supposed to be the same but could you confirm what numbers are right (or why they might be different?)
 
-  They should be different. In Table 1, T5-large is finetuned with actions as input for classification; otherwise, in Table 3, the T5-large baseline makes judgments with action and generated norm as input to ensure fairness. Notably, the norm is generated by finetuned baseline T5-large. Therefore, the accuracy performance is increased from 0.806 to 0.811.
+  They should be different. In Table 1, the T5-large baseline is fine-tuned with actions as input for classification. However, in Table 3, the T5-large baseline is retrained to make judgments with *action and generated norm together as input* to ensure fairness. Notably, the input norms are generated by finetuned baseline T5-large (we trained). Therefore, the accuracy performance is increased from 0.806 to 0.811.
 
 > Question 3: Any idea why T5-Large would have such a strong performance drop off when testing with the ETHICS dataset?
 
