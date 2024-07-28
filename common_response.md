@@ -39,10 +39,11 @@ In cases where the classifier makes very confident judgments, we refrain from in
 
 #### 5. Explanation of method validity (Pe9C, tJvT)
 
-Overall, our approach benefits from leveraging the generated competitive norms to assist actions for classification judgments.
+Overall, our approach benefits from leveraging the generated competitive norms to assist actions for classification judgments. On the other hand, the compared baselines are all trained on the datasets (same as the pre-train step of our method). Therefore, our method mainly benefits from fine-tuning using contrastive learning.
 
-From a methodological point of view, the compared baselines are all trained on the datasets. Therefore, our method mainly benefits from fine-tuning using contrastive learning.
+Compared with ValueKaleidoscope, our differences with this method are as follows: 
 
+- The frameworks are different. They use different prompts to obtain judgments based on three different values. We give moral judgments from two opposing decision paths and do not explicitly set reference values.
 
-
+- Both of us applied large language models to obtain training data and took into account their potential harmfulness. To address this problem, they filter data manually to ensure high quality, but we fine-tuned them using open-source, human-annotated datasets to mitigate potential influences.
 
