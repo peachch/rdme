@@ -35,3 +35,14 @@ In cases where the classifier makes very confident judgments, we refrain from in
 1) We will move the significant test results for human evaluation from the Appendix to Table 2 and add the above results to Table 1.
 
 2) In the Limitation section, we will add that the binary classification task itself may poorly explain complex social behavior, which may decrease the model's meaningful generalization.
+
+
+#### 5. Explanation of method validity (Pe9C, tJvT)
+
+Overall, our approach benefits from leveraging the generated competitive norms to assist actions for classification judgments.
+
+From a methodological point of view, the compared baselines are all trained on the datasets. Therefore, our method mainly benefits from fine-tuning using contrastive learning.
+
+
+
+
