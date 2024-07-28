@@ -2,11 +2,15 @@ We are grateful to all reviewers for their insightful comments. We appreciate th
 
 We now display several new experiments and analyses based on your suggestions. We further address each of your questions in the individual responses, in addition to three common items that we’d like to highlight here.
 
-#### Clarity of case study in Table 5 （tJvT, gjqp）.
+#### Clarity of case study in Table 5 （tJvT, gjqp）.   
+We show two types (4 cases) in the case study. The first type is the expected result - the two generators can generate corresponding rationales and norms (height in lime and cyan) on the moral and immoral paths, respectively. 
 
+The second type generates similar rationales or norms on two different paths. *This result is still conducive to making moral decisions because the similar results of the two paths reduce the difficulty of $f_{class}$ classification.* 
+Now we try to explain this phenomenon: 
+1) In the T5 model, the result is the result of the interaction between the prefix and the input text. However, *the prefix has a limited effect on the generator.*  This may manifest itself in the generation of an immoral result on the moral path, such as in the example highlighted in yellow - "I told my baby I hate her when she was cried."
+2) Otherwise, in fine-tuning, *we use contrastive learning to bring the generated norms using the rationale of two opposite paths closer*, i.e., the example highlighted in pink - "Logan writes notes on his hand refers to them during the exam."
 
-#### filter function (DNa8, tJvT)
-
+Therefore, these cases can be reasonably explained and can help obtain accurate final moral judgments.
 
 #### Additional significant test (DNa8, tJvT).
 
@@ -21,7 +25,11 @@ Now, we provide the significant test of Table 1, and we will add this to the mai
 | Claude-3-haiku  | $1.5918 \times 10^{-5}$ |0.0007|
 
 
-#### We need a minor revision of the main body and Appendix (DNa8, Pe9C, tJvT).
+#### filter function (DNa8, tJvT)
+
+
+
+#### Need a minor revision of the Appendix (DNa8, Pe9C, tJvT).
 
 1) We will move the significant test results for human evaluation from the Appendix to Table 2 and add the above results to Table 1.
 
