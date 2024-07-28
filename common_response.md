@@ -2,7 +2,7 @@ We are grateful to all reviewers for their insightful comments. We appreciate th
 
 We now display several new experiments and analyses based on your suggestions. We further address each of your questions in the individual responses, in addition to four common items that we’d like to highlight here.
 
-#### 1. Clarity of the case study in Table 5 （tJvT, gjqp）.   
+#### 1. Clarity of the case study in Table 5 (tJvT, gjqp).   
 We show two types (4 cases) in the case study. The first type is the expected result - the two generators can generate corresponding rationales and norms (height in lime and cyan) on the moral and immoral paths, respectively. 
 
 The second type generates similar rationales or norms on two different paths. *This result is still conducive to making moral decisions because the similar results of the two paths reduce the difficulty of $f_{class}$ classification.* 
